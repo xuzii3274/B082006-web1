@@ -2,6 +2,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<LineBotConfig, LineBotConfig>((s)=> new LineBotConfig
+{
+    channelSecret = builder.Configuration.GetSection("LineBot")["channelSecret"]!,
+    accessToken = builder.Configuration.GetSection("LineBot")["accessToken"]!,
+});
+//DI
+builder.Services.AddSingleton<ILineService, LineService>();
+builder.Services.AddHttpContextAccessor();
+
 
 var app = builder.Build();
 
@@ -12,6 +21,11 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+
+
+
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

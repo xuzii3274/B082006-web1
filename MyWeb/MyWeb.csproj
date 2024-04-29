@@ -5,7 +5,13 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>My_web</RootNamespace>
+        <AssemblyName>Myweb</AssemblyName>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Line.Messaging" Version="1.4.5" />
+      <PackageReference Include="System.Drawing.Common" Version="8.0.4" />
+    </ItemGroup>
 
 
 </Project>
