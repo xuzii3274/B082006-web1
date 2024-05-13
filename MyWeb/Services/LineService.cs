@@ -26,9 +26,9 @@ public class LineService : ILineService
         int index = rnd.Next(0, 3);//012
         string[] imageUrl = new string[]
         {
-            "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png"
-            "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png"
-            "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png"
+            "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png",
+            "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png",
+            "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png",
         };
                 
             
