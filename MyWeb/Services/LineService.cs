@@ -12,8 +12,32 @@ public class LineService : ILineService
     {
         var result = null as List<ISendMessage>;
 
+        /* 513進度
+         if (message.Contains("黎深"))
+         {
+             return  new List<ISendMessage>
+             {
+             new ImageMessage("https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png","https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png",
+                 null),
+             };
+         }*/
+
+        Random rnd = new();
+        int index = rnd.Next(0, 3);//012
+        string[] imageUrl = new string[]
+        {
+            "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png"
+            "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png"
+            "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png"
+        };
+                
+            
+            
+        
         result = new List<ISendMessage>
         {
+            new ImageMessage("https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png","https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png",
+                null),
             
             new TextMessage($"Receive a text event message \nchannelId={channelId}  \nuserId={userId}")
         };
