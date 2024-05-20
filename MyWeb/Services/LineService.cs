@@ -28,7 +28,7 @@ public class LineService : ILineService
         {
             "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png",
             "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240109/3bcac847bd8995730801796639ffd341.png",
-            "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240109/2499eed5c83a35a472eee74bec9b5e41.png",
+            "https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240109/6eb86350baf810027f60fa096a065918.png",
         };
                 
             
@@ -36,8 +36,7 @@ public class LineService : ILineService
         
         result = new List<ISendMessage>
         {
-            new ImageMessage(imageUrl[index],"https://assets.papegames.com/nikkiweb/papegame/deepspacetw/material/20240110/699e9eab486328f6dd8718911dd86043.png",
-                null),
+            new ImageMessage(imageUrl[index],imageUrl[index], null),
             
             new TextMessage($"Receive a text event message \nchannelId={channelId}  \nuserId={userId}")
         };
