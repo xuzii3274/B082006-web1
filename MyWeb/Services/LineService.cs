@@ -49,7 +49,7 @@ public class LineService : ILineService
 
         result = new List<ISendMessage>
         {
-            new TextMessage($"Receive a sticker event message \nchannelId={channelId}  \nuserId={userId}")
+            new TextMessage($"我老公Receive a sticker event message \nchannelId={channelId}  \nuserId={userId}")
         };
         return result;
     }
